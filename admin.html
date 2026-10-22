@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Dental Clinic</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <header class="admin-header">
+      <h1>Dental Clinic</h1>
+      <p>Appointments Dashboard</p>
+    </header>
+
+    <main class="admin-container">
+      <section id="login-section">
+        <h2>Admin Login</h2>
+
+        <form id="login-form">
+          <label for="admin-password">Password</label>
+
+          <input
+            type="password"
+            id="admin-password"
+            placeholder="Enter admin password"
+            required
+          />
+
+          <button type="submit">Login</button>
+          <p id="login-message"></p>
+        </form>
+      </section>
+
+      <section id="dashboard-section" hidden>
+        <h2>All Appointments</h2>
+
+        <button type="button" id="logout-button">Logout</button>
+
+        <p id="booking-count">Loading appointments...</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Patient Name</th>
+                <th>Phone</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+
+            <tbody id="bookings-table"></tbody>
+          </table>
+        </div>
+
+        <p id="error-message"></p>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

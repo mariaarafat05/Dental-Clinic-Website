@@ -1,0 +1,295 @@
+* {
+    font-family: "Outfit", sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+.booking-overlay {
+
+    background-color: #fff;
+
+    width: 40%;
+
+    height: 96vh;
+
+    margin: 0;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    top: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 12px rgba(43, 89, 126, 0.37);
+
+}
+
+.booking-overlay .booking-modal .booking-header {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.booking-overlay .booking-modal {
+
+    padding: 20px 10px;
+
+}
+
+.booking-overlay .booking-modal .booking-header i {
+
+    font-size: 60px;
+
+    color: #75bdca;
+
+}
+
+.booking-overlay .booking-modal .booking-header .booking-title h1 {
+
+    font-size: 25px;
+
+    color: #367b7c;
+
+}
+
+.booking-overlay .booking-modal .booking-header .booking-title p {
+
+    font-size: 13px;
+
+    color: #367b7c;
+
+}
+
+.booking-overlay .booking-modal .booking-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 20px 10px;
+
+}
+
+.booking-overlay .booking-modal .booking-form .booking-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+.booking-overlay .booking-modal .booking-form .booking-field label {
+
+    font-size: 15px;
+
+    color: #2c5f69;
+
+}
+
+.booking-overlay .booking-modal .booking-form .booking-field input {
+
+    padding: 12px 10px;
+
+    border-radius: 10px;
+
+    border-style: none;
+
+    border: 1px solid #8adbe0;
+
+    box-shadow: 0 4px 12px rgba(81, 142, 192, 0.158);
+
+    transition: .3s;
+
+}
+
+.booking-overlay .booking-modal .booking-form .booking-field input:hover {
+
+    transform: scale(1.05);
+
+}
+
+.booking-overlay .booking-modal .booking-form .booking-field input:focus {
+
+    outline: none;
+
+    box-shadow: none;
+
+}
+
+.booking-overlay .booking-modal .booking-form .booking-field .booking-message {
+
+    padding: 30px 10px;
+
+}
+
+.booking-overlay .booking-modal button {
+
+    padding: 10px 30px;
+
+    border-radius: 10px;
+
+    border-style: none;
+
+    box-shadow: 0 4px 12px rgba(43, 89, 126, 0.37);
+
+    background-color: #367a83;
+
+    margin-left: 180px;
+
+    transition: .3s;
+
+}
+
+.booking-overlay .booking-modal button a {
+
+    color: #f6f8f8;
+
+    text-decoration: none;
+
+}
+
+.booking-overlay .booking-modal button:hover {
+
+    transform: scale(1.05);
+
+    background-color: #1e3242;
+
+}
+
+
+
+
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .booking-overlay {
+        width: 65%;
+        height: auto;
+        min-height: 96vh;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+    }
+
+    .booking-overlay .booking-modal button {
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .booking-overlay .booking-modal .booking-form .booking-field input:hover {
+        transform: none;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .booking-overlay {
+        width: 92%;
+        height: auto;
+        min-height: 96vh;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+
+    .booking-overlay .booking-modal {
+        padding: 20px 10px;
+    }
+
+    .booking-overlay .booking-modal .booking-header {
+        gap: 10px;
+    }
+
+    .booking-overlay .booking-modal .booking-header i {
+        font-size: 40px;
+    }
+
+    .booking-overlay .booking-modal .booking-header .booking-title h1 {
+        font-size: 21px;
+    }
+
+    .booking-overlay .booking-modal .booking-header .booking-title p {
+        font-size: 12px;
+    }
+
+    .booking-overlay .booking-modal .booking-form {
+        gap: 12px;
+        padding: 20px 5px;
+    }
+
+    .booking-overlay .booking-modal .booking-form .booking-field label {
+        font-size: 14px;
+    }
+
+    .booking-overlay .booking-modal .booking-form .booking-field input {
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    .booking-overlay .booking-modal .booking-form .booking-field input:hover {
+        transform: none;
+    }
+
+    .booking-overlay .booking-modal .booking-form .booking-field .booking-message {
+        padding: 20px 10px;
+    }
+
+    .booking-overlay .booking-modal button {
+        margin-left: 0;
+        align-self: center;
+        max-width: 100%;
+    }
+
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+
+    .booking-overlay {
+        width: 95%;
+    }
+
+    .booking-overlay .booking-modal .booking-header i {
+        font-size: 32px;
+    }
+
+    .booking-overlay .booking-modal .booking-header .booking-title h1 {
+        font-size: 18px;
+    }
+
+    .booking-overlay .booking-modal .booking-header .booking-title p {
+        font-size: 11px;
+    }
+
+}

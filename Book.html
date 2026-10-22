@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE-->
+    <title>Dental Clinic</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="Book.css">
+
+     <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=VT323&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <section>
+
+        <div class="booking-overlay">
+
+            <div class="booking-modal">
+
+                <div class="booking-header">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <div class="booking-title">
+
+                        <h1>Book Your Appointment</h1>
+
+                        <p>Fill in the details below and we'll get back to you as soon <br> as possible.</p>
+
+                    </div>
+                </div>
+
+                <form class="booking-form" id="booking-form">
+
+                    <div class="booking-field">
+
+                        <label>Full Name</label>
+
+                        <input type="text" class="booking-name" name="name" placeholder="Your name" required>
+
+                    </div>
+
+                    <div class="booking-field">
+
+                        <label>Phone Number</label>
+
+                        <input type="text" class="booking-phone" name="phone" placeholder="Your phone number" required>
+
+                    </div>
+
+                    <div class="booking-field">
+
+                        <label>Preferred Date</label>
+
+                        <input type="date" class="booking-date" name="date" required>
+
+                    </div>
+
+                    <div class="booking-field">
+
+                        <label>Preferred Time</label>
+
+                        <input type="time" class="booking-time" name="time" required>
+
+                    </div>
+
+                    <div class="booking-field">
+
+                        <label>Message (Optional)</label>
+
+                        <input type="text" class="booking-message" name="message" placeholder="Any additional notes...">
+
+                    </div>
+
+                    <button type="submit"><a>Confirm Booking →</a></button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<script src="booking.js"></script>
+
+</body>
+</html>

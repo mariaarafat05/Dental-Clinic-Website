@@ -1,0 +1,13 @@
+node_modules/
+backend/node_modules/
+
+backend/bookings.db
+backend/bookings.db-journal
+backend/bookings.db-wal
+backend/bookings.db-shm
+
+.env
+backend/.env
+
+.DS_Store
+Thumbs.db
