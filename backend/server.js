@@ -31,7 +31,7 @@ app.use(cors({
 }));
 
 app.use(session({
-    secret: process.env.SESSION_SECRET || "change-this-secret-before-deployment",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -52,8 +52,7 @@ app.get("/", (req, res) => {
 app.post("/admin/login", (req, res) => {
     const { password } = req.body;
 
-    const ADMIN_PASSWORD =
-        process.env.ADMIN_PASSWORD || "Admin12345!";
+    const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
     if (password !== ADMIN_PASSWORD) {
         return res.status(401).json({
