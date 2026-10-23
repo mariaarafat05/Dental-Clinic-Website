@@ -36,6 +36,6 @@ bookingForm.addEventListener("submit", async function (event) {
 
     } catch (error) {
         console.error("Booking error:", error);
-        alert("Could not connect to the server. Please try again.");
+        alert("Error details: " + error.message);
     }
 });
