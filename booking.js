@@ -10,7 +10,7 @@ bookingForm.addEventListener("submit", async function (event) {
     const message = document.querySelector(".booking-message").value.trim();
 
     try {
-        const response = await fetch("http://127.0.0.1:3000/book", {
+        const response = await fetch("https://dental-clinic-website-5.onrender.com/book", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
