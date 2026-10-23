@@ -10,7 +10,7 @@ const bookingsTable = document.querySelector("#bookings-table");
 const bookingCount = document.querySelector("#booking-count");
 const errorMessage = document.querySelector("#error-message");
 
-const API_URL = "http://127.0.0.1:3000";
+const API_URL = "https://dental-clinic-website-5.onrender.com";
 
 async function loadBookings() {
     try {
