@@ -22,6 +22,8 @@ db.exec(`
     )
 `);
 
+app.use(express.json());
+
 app.use(cors({
     origin: "https://mariaarafat05.github.io",
     methods: ["GET", "POST", "OPTIONS"],
@@ -41,7 +43,7 @@ app.use(session({
     }
 }));
 
-app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
