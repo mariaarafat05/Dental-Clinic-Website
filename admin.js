@@ -33,6 +33,9 @@ async function loadBookings() {
         bookingCount.textContent = `Total Appointments: ${bookings.length}`;
         errorMessage.textContent = "";
 
+        loginSection.hidden = true;
+        dashboardSection.hidden = false;
+
         if (bookings.length === 0) {
             const row = document.createElement("tr");
             const cell = document.createElement("td");
@@ -66,8 +69,6 @@ async function loadBookings() {
             bookingsTable.appendChild(row);
         });
 
-        loginSection.hidden = true;
-        dashboardSection.hidden = false;
 
     } catch (error) {
         console.error(error);
